@@ -2,7 +2,11 @@ package Project;
 
 import java.util.List;
 import java.util.Map;
-
+/**
+ * 
+ * @author Mehdi_Nait
+ *
+ */
 public class ServeurDiscussion {
 	private Map<Role,List<Utilisateur>> mapping_role_utilisateur;
 	private List<Canal> canaux;

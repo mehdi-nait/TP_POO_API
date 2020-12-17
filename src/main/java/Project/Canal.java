@@ -61,7 +61,12 @@ public class Canal implements Comparable<Canal>,Destinataire{
 	}
 	
 	
-	
+	/**
+	 * Envoyer un message dans le Canal
+	 * @param utilisateur
+	 * @param message
+	 * @throws ActionNonAutoriseeException
+	 */
 	public void ecrireMessage(Utilisateur utilisateur, Message message) throws ActionNonAutoriseeException{
 		List<Role> roles_utilisateur = new ArrayList<Role>();
 		boolean can_write = false;

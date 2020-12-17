@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Built-By: Mehdi_Nait
+Build-Jdk: 14.0.2
+Main-Class: Project.ServeurDiscussion
+Created-By: Maven Integration for Eclipse
+
