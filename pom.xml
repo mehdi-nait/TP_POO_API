@@ -9,10 +9,49 @@
 
 	<build>
 		<plugins>
+
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-site-plugin</artifactId>
 				<version>3.7.1</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.8</version>
+				<configuration>
+					<outputDirectory>${project.build.directory}/javadoc</outputDirectory>
+					<reportOutputDirectory>${project.reporting.outputDirectory}/javadoc</reportOutputDirectory>
+				</configuration>
+				<executions>
+					<execution>
+						<id>attach-javadocs</id>
+						<phase>site</phase>
+						<goals>
+							<goal>aggregate</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>com.github.github</groupId>
+				<artifactId>site-maven-plugin</artifactId>
+				<version>0.8</version>
+				<configuration>
+					<message>Creating site for ${project.version}</message>
+					<repositoryOwner>mehdi-nait</repositoryOwner>
+					<repositoryName>TP_POO_API</repositoryName>
+					<server>github</server>
+				</configuration>
+				<executions>
+					<execution>
+						<phase>site-deploy</phase>
+						<goals>
+							<goal>site</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
