@@ -9,7 +9,9 @@ public class ServeurDiscussion {
 	private String nom;
 	private Map<Role,List<Habilitation>> mapping_role_habilitation;
 	
-	
+	public static void main(String[]args) {
+		System.out.println("hello world");
+	}
 	public Map<Role, List<Utilisateur>> getMapping_role_utilisateur() {
 		return mapping_role_utilisateur;
 	}

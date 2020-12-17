@@ -29,7 +29,7 @@
 						<manifest>
 							<addClasspath>true</addClasspath>
 							<classpathPrefix>lib/</classpathPrefix>
-							<mainClass>ServeurDiscussion.MyClass</mainClass>
+							<mainClass>Project.ServeurDiscussion</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
