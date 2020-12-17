@@ -20,18 +20,14 @@ public class Role {
 
 	@Override
 	public boolean equals(Object obj) {
-		if (this == obj)
+		if (this == obj )
 			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
+		if (obj == null || getClass() != obj.getClass())
 			return false;
 		Role other = (Role) obj;
-		if (nomRole == null) {
-			if (other.nomRole != null)
+		if (nomRole == null || other.nomRole != null ||!nomRole.equals(other.nomRole)) {
 				return false;
-		} else if (!nomRole.equals(other.nomRole))
-			return false;
+		} 
 		return true;
 	}
 
