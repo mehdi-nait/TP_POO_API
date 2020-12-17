@@ -22,12 +22,13 @@ public class Role {
 	public boolean equals(Object obj) {
 		if (this == obj )
 			return true;
-		if (obj == null || getClass() != obj.getClass())
+		if (obj == null || getClass()!=obj.getClass())
 			return false;
 		Role other = (Role) obj;
-		if (nomRole == null || other.nomRole != null ||!nomRole.equals(other.nomRole)) {
+		if (nomRole == null || !nomRole.equals(other.nomRole)) {
+			if (other.nomRole != null)
 				return false;
-		} 
+		}
 		return true;
 	}
 

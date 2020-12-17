@@ -1,0 +1,10 @@
+Project\Message.class
+Project\ServeurDiscussion.class
+Project\WebhookAction.class
+Project\Destinataire.class
+Project\Habilitation.class
+Exceptions\ActionNonAutoriseeException.class
+Project\Role.class
+Project\Utilisateur.class
+Project\Canal.class
+Project\Webhook.class
